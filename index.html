@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+	padding: 100px 0px 0px 400px;
+	background-image: url( './Images/BackGround.jpeg' );
+	background-size: 1400px 800px;
+}
+canvas { 
+	//background: linear-gradient( to bottom,brown,#CD7F32,brown); 
+	background-image: url( './Images/CanvasBg.jpg' );
+	background-size: 800px 600px;
+}
+
+.startposition {
+	padding: 15px 25px;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: maroon;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 4px black;
+	position: absolute;
+	left: 600px;
+	top: 250px;
+}
+</style>
+<body background="./Images/BackGround.jpeg">
+<canvas id="myCanvas" width="500" height="400">
+</canvas>
+<br>
+<button class="startposition" id="start" type="button" value="Start" onclick="drawLevels();setTimeout(GameStart,2000);">Start</button>
+<img width="50" id="pausebut" src="./Images/pausebut.ico" onclick="GamePause()"/></br>
+</body>
+<script src="Game.js"></script>
+</html>
