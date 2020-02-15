@@ -31,11 +31,12 @@ document.getElementById("pausebut").setAttribute("style","visibility:hidden");
 
 function initScreen(){
 	ctx.clearRect(0,0,canvas.width,canvas.height);
-	ctx.font = "18px Corsiva";
+	ctx.font = "32px Corsiva";
 //ctx.fillText("", 10, 50);
 	//ctx.font="28px Broadway";
 	ctx.strokeStyle="white";
    ctx.strokeText("Brick Breaker Game",120,(height/3)-10);
+   ctx.font = "18px Corsiva";
    ctx.strokeText("By",200,(height/2)+40);
    ctx.font = "32px Corsiva";
    ctx.fillStyle='white';
