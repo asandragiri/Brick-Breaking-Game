@@ -8,7 +8,7 @@ var brickRows = 4;
 var brickCols = 8;
 var brickX=brickY=0;
 var bRadius=10;
-var bx=width/2;
+var bx=width/
 var by=height-40;
 var bSpeedX = 2;
 var bSpeedY = -2;
@@ -31,15 +31,15 @@ document.getElementById("pausebut").setAttribute("style","visibility:hidden");
 
 function initScreen(){
 	ctx.clearRect(0,0,canvas.width,canvas.height);
-	ctx.font = "32px Corsiva";
+	ctx.font = "18px Corsiva";
 //ctx.fillText("", 10, 50);
 	//ctx.font="28px Broadway";
 	ctx.strokeStyle="white";
    ctx.strokeText("Brick Breaker Game",120,(height/3)-10);
-   ctx.strokeText("Team 8",200,(height/2)+40);
-   ctx.font = "18px Corsiva";
+   ctx.strokeText("By",200,(height/2)+40);
+   ctx.font = "32px Corsiva";
    ctx.fillStyle='white';
-   ctx.fillText("Abhishek, Priyanka, Meghana, Swathi",(width/2)-130,(height/2)+70);
+   ctx.fillText("Abhishek",(width/2)-130,(height/2)+70);
 }
 function drawBall(){
 	var bGrad = ctx.createRadialGradient(bx,by,bRadius,bx-2, by+2, 1);
