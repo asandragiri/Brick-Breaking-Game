@@ -8,7 +8,7 @@ var brickRows = 4;
 var brickCols = 8;
 var brickX=brickY=0;
 var bRadius=10;
-var bx=width/
+var bx=width/2;
 var by=height-40;
 var bSpeedX = 2;
 var bSpeedY = -2;
